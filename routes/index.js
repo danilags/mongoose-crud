@@ -16,8 +16,14 @@ router.put('/books/:id', bookController.updateBook);
 router.delete('/books/:id', bookController.deleteBook);
 
 
+router.get('/transaction', transactionController.getAllTransaction);
 router.post('/transaction', transactionController.createTransaction);
+router.put('/transaction/:id', transactionController.updateTransaction);
+router.delete('/transaction/:id', transactionController.deleteTransaction);
 
 router.post('/customer', customerController.createCustomer);
+router.get('/customer', customerController.getAllCustomer);
+router.put('/customer/:id', customerController.updateCustomer);
+router.delete('/customer/:id', customerController.deleteCustomer);
 
 module.exports = router;
